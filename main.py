@@ -14,9 +14,14 @@ def validateDinner(question):
     while True:
         try:
             dinner = int(input(question))
-            return dinner
+            if 1 <= dinner <= 8:
+                return dinner
+            else:
+                print("Please enter a number between 1 and 8.")
         except ValueError:
-            print("Please enter a valid number, between 1 and 8")
+            pass
+
+
 
 # A list of all fortunes
 fortunes = ["A closed mouth gathers no feet.","He who throws dirt is losing ground.","Borrow money from a pessimist. They don't expect it back.","Life is what happens to you while you are busy making other plans.","Help! I'm being held prisoner in a fortune cookie factory","Dance as if no one is watching.","Live this day as if it were your last.","Your life will be happy and peaceful.","Reach for joy and all else will follow.","Move in the direction of your dreams.","Bloom where you are planted.","Appreciate. Appreciate. Appreciate.","Happy News is on its way.","All the troubles you have will pass away very quickly.","All will go well with your new project.","All your hard work will soon pay off.","Allow compassion to guide your decisions.","An acquaintance of the past will affect you in the near future.","An agreeable romance might begin to take on the appearance.","An important person will offer you support.","An inch of time is an inch of gold.","Any day above ground is a good day."]
